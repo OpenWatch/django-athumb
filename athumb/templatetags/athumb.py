@@ -1,6 +1,6 @@
 from django.template import Library
-from thumbnail import thumbnail
+from thumbnail import athumbnail
 
 register = Library()
 
-register.tag(thumbnail)
+register.tag(athumbnail)

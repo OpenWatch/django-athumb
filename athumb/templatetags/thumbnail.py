@@ -139,7 +139,7 @@ class ThumbnailNode(Node):
         return 'request' in context and context['request'].is_secure()
 
 
-def thumbnail(parser, token):
+def athumbnail(parser, token):
     """
     Creates a thumbnail of for an ImageField.
 
@@ -200,4 +200,4 @@ def thumbnail(parser, token):
     return ThumbnailNode(source_var, size_var, opts=opts,
                          context_name=context_name, **kwargs)
 
-register.tag(thumbnail)
+register.tag(athumbnail)
