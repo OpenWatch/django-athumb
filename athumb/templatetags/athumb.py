@@ -1,5 +1,5 @@
 from django.template import Library
-from thumbnail import athumbnail
+from athumbnail import athumbnail
 
 register = Library()
 
